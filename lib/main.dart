@@ -14,34 +14,33 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
           backgroundColor: Colors.teal,
           body: SafeArea(
-              child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                width: 100.0,
-                alignment: Alignment.center,
-                color: Colors.red,
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.amber,
-                  ),
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.green,
-                  ),
-                ],
-              ),
-              Container(
-                width: 100.0,
-                color: Colors.blue,
-              )
-            ],
+              child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CircleAvatar(
+                  radius: 50.0,
+                  backgroundImage: AssetImage('images/programmer.jpeg'),
+                ),
+                Text(
+                  'Dima Zh',
+                  style: TextStyle(
+                      fontSize: 40.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Lobster'),
+                ),
+                Text(
+                  'Flutter developer'.toUpperCase(),
+                  style: TextStyle(
+                      fontSize: 26.0,
+                      color: Colors.teal.shade100,
+                      letterSpacing: 2.5,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Source Sans 3'),
+                ),
+              ],
+            ),
           )),
         ));
   }
