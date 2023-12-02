@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
@@ -17,6 +18,8 @@ class MyApp extends StatelessWidget {
             height: 100.0,
             width: 100.0,
             margin: EdgeInsets.all(20.0),
+            padding: EdgeInsets.all(20.0),
+            alignment: Alignment.center,
             color: Colors.white,
             child: Text('Hello'),
           ),
